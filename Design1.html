@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujjwal's Gym</title>
+</head>
+<style>
+    body {
+        /* CSS RESET */
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg3.jpg');
+        color: white;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 12px;
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        margin: 12px auto;
+        width: 33%;
+    }
+
+    .right {
+        /* border: 2px solid yellow; */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 12px;
+    }
+
+    .navbar {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .navbar li {
+        display: inline;
+        /* margin: 0px 12px; */
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: white;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        background: rgba(255, 255, 255, 0.2);
+        text-decoration: underline;
+    }
+
+
+    .left img {
+        width: 70px;
+    }
+
+    .left div {
+        /* display: inline-block; */
+        text-align: center;
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+
+    .btn {
+        margin: 0px 9px;
+        padding: 4px 14px;
+        background-color: black;
+        color: white;
+        border: 2px solid grey;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: white;
+        color: black;
+        font-size: large;
+
+        /* or */
+
+        /* invert button color */
+        /* filter: invert(1); */
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 35px;
+        width: 33%;
+        border-radius: 10px;
+    }
+
+    .forms-group input {
+        display: block;
+        margin: 9px auto;
+        text-align: center;
+        padding: 13px;
+        width: 320px;
+        font-size: 16px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        margin: 17px auto;
+        width: 350px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Ujjwal's Fitness</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="noaction.php" class="forms-group">
+            <div>
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div>
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div>
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div>
+                <input type="text" name="" placeholder="Enter your Mobile Number">
+            </div>
+        </form>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>
